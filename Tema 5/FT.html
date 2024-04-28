@@ -1,0 +1,139 @@
+<head>
+    <title>Salud para todos</title>
+    <style type ="text/css">
+        #table{
+           margin-right:100px;
+           margin-left: 800px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    
+    <img src="imagen/hospital.webp"
+                width="500" height="290"  
+                alt="img de hospital"/>
+    
+    
+    <table border="4px" id="table">
+        <caption>Solicitud para la atención médica de el paciente</caption>
+        <form action="#" method="post">
+            <thead>
+                <tr scope="colgroup">
+                    <th scope="col">información</th>
+                    <th scope="col">Datos de el paciente</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Nombre </td>
+                    <td scope="row"><input type="text" name="Nombre" id="Nombre" ></td>
+                </tr>
+            </tbody>
+
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Apellidos </td>
+                    <td scope="row"><input type="text" name="Apellidos" id="Apellidos" ></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Correo electrónico </td>
+                    <td scope="row"><input type="email" name="email" id="email" ></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Teléfono </td>
+                    <td scope="row"><input type="tel" name="tel" id="tel" ></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Dirección </td>
+                    <td scope="row"><select id="Region-selector" name="food" size="5" >
+                        <option value="Region">Laponia</option>
+                        <option value="Region"> Ostrobotnia del Norte</option>
+                        <option value="Region">Kainuu</option>
+                        <option value="Region">Carelia del Norte</option>
+                        <option value="Region"> Savonia del Norte</option>
+                        <option value="Region"> Savonia del Sur</option>
+                        <option value="Region">Ostrobotnia del Sur</option>
+                        <option value="Region"> Ostrobotnia</option>
+                        <option value="Region"> Pirkanmaa</option>
+                        
+                        *<option value="Region">Satakunta</option>
+                        <option value="Region">Ostrobotnia Central</option>
+                        <option value="Region">Finlandia Central</option>
+                        <option value="Region">Finlandia del Sudoeste</option>
+                        <option value="Region">Carelia del Sur</option>
+                        <option value="Region">Päijänne Tavastia</option>
+                        <option value="Region">Tavastia Propia</option>
+                        <option value="Region">Uusimaa</option>
+                        <option value="Region">Kymenlaakso</option>
+                        <option value="Region">Islas Åland</option></select></td>
+                    </select>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Edad </td>
+                    <td scope="row"><input type="number" name="Edad" id="Edad" min="18" max="80"></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Fecha de nacimiento </td>
+                    <td scope="row"><input type="date" name="date"></td>
+                </tr>
+            </tbody>
+
+            
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Síntomas del paciente</td>
+                    <td scope="row">
+                        <input type="checkbox" value="estomago" name="Symptoms">Dolor de estómago<br>
+                        <input type="checkbox" value="fiebre" name="Symptoms">Fiebre <br>
+                        <input type="checkbox" value="reflujo" name="Symptoms">Reflujo gástrico<br>
+                        <input type="checkbox" value="intolerancia" name="Symptoms">Intolerancias<br>
+                        <input type="checkbox" value="migrana" name="Symptoms">Migranas<br>
+                        <input type="checkbox" value="debilidad" name="Symptoms">Debilidad<br>
+                        <input type="checkbox" value="insomnio" name="Symptoms">Impedimento para dormir<br> 
+                    </td>
+                </tr>
+
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Reiniciar información </td>
+                    <td scope="row"><input type="reset" value="Reiniciar información"/>
+                    </td>
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Enviar</td>
+                    <td scope="row"><input type="submit" value="Enviar información"/>
+                    </td>
+                </tr>
+            </tbody>
+        </form>
+    </table>
+
+</body>
+</html>
+
+<!--Formulario acerca de salud (admision) -->

@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8">
+
+        <style type="text/css">
+
+            .tab{
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Formularios</h1>
+        <form action="#" method="post">
+
+            <input type="color" name="color" id="color"/>
+            <br>
+            <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+            <br>
+            <input type="password" name="password" id="password" placeholder="Contrasena">
+            <br>
+
+            Género:<br>     <!--USAMOS Radiobuttons-->
+            <input type="radio" value="m" name="gender" class="tab">Masculino<br>
+            <input type="radio" value="f" name="gender" class="tab">Femenino
+            <br>
+            Edad:<br>
+            <input type="radio" value="0" name="age" class="tab">Menor de 18 anos<br>
+            <input type="radio" value="1" name="age" class="tab">Mayor de edad<br>
+            <input type="radio" value="2" name="age" class="tab">Retirado<br>
+
+            Lenjuages de programación que conoces:<br><!--USAMOS CHECKBOX-->
+            <input type="checkbox" value="html" name="Languaje" class="tab">HTML 5<br>
+            <input type="checkbox" value="js" name="Languaje" class="tab">java script <br>
+            <input type="checkbox" value="css" name="Languaje" class="tab">CSS<br>
+            <input type="checkbox" value="swift" name="Languaje" class="tab">swift<br>
+
+            Selecciona el primer plato del Menú:    <!--USAMOS DESPLEGABLES-->
+            <br>
+            <select id="food-selector" name="food"  size="5" multiple="multiple" class="tab">
+                <option value="Pasta">Espagueti Bolonesa</option>
+                <option value="Carnivoro">5 huevos con carne de cerdo</option>
+                <option value="Elite">Carne de res con ensaladas finas banadas con aceite de oliva</option>
+                <option value="Deluxe">Salmon Banado con caviar negro</option>
+                <option value="Infantil">Comida variada de la comida del dia</option>
+                <option value="Hamburguesa">Hamburguesa carne de cerdo y papas</option>
+                <option value="Cebiche">Cebiche peruano</option>
+                <option value="Pavo">Pavo combinado con especias deliciosas</option>
+                <option value="Novillo">Novillo a medio cocer</option>
+            </select>
+            <br>
+
+            Fecha de nacimiento:    <input type="date" name="date"> <br>
+            
+            Mes favorito:           <input type="month" name="month"> <br>
+
+            Hora de salida:         <input type="time" name="time"> <br>
+
+            Semana de vaciones:     <input type="week" name="datetime"> <br> 
+
+            Archivo adjunto:        <input type="file" name="file"> <br> 
+
+            <input type="submit" value="Enviar información"/> <br> 
+
+            <input type="reset" value="Reiniciar información"/>
+        </form>
+    </body>
+</html>
+
+
+
+<!--"Action" es un atributo que indica al formulario donde tiene que mandar la info a ser procesada
+    "Method" puede tomar 2 valores: indica cómo se va a procesar la info que enviemos.
+        Get: Se usa muy poco porque no es muy seguro
+        
+        Post: Enviar los formularios a la acción indicada (ES SEGURO)
+        En Post las variables no se exponen publicamente sino que se guardan en un "Array", el cual tendrá por claves o por identificadores el nombre de la variable y los valores serán los que el usuario haya decidio introducir 
+
+        1er elemento: input: Entrada de datos
+        ATRIBUTO name="" Es como se refiere a la entrada de datos una vez que se ha procesado y enviado al servidor
+
+        ATRIBUTO id="" para java a veces
+        Un identificador para poder recuperar el valor exacto de la entrada de datos
+
+        Placeholder : poner el texto en el lugar que el usuario tenga q escribir
+        "VA despues del ID"
+
+        También hay input type email
+
+        *Un radio button es un tipo de entrada de datos(input) que permite al usuaro elegir solo 1 de entre 2 o más opciones 
+
+        *checkbox se puede seleccionar multiples veces
+
+                
+                input tel "tel" la diferencia esta cuando se abre en un navegador movil,email y numeros lo mismo.
+
+-->
