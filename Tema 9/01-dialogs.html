@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Diálogos</title>
+        <meta charset="UTF-8">
+
+    </head>
+
+    <body>
+        <!--
+        <h1>Diálogos en forma de alerta</h1>
+        <script lang="javascript" type="text/javascript">
+
+            var message ="Espero que tengas un buen día!"
+            var age = 23;
+            var secondMessage = "Confirmas que tienes "+age + "anos?";
+            alert(secondMessage);
+        </script>
+        -->
+
+        <!--
+                2do TIPO DE DIÁLOGOS / En forma de confirmación /EJEMPLO
+        
+        <script lang="javascript" type="text/javascript">
+        
+        var confirmation = confirm("Estás seguro de que quieres salir?");
+
+        if(confirmation)
+        {
+            document.write("Estamos saliendo de la aplicación...");
+        } else 
+        {
+            document.write("Todavia estamos en la aplicación...");
+        }
+        </script>
+        -->
+
+                
+        
+    <!--3er Tipo de diálogo / Caja de valores / Ejemplo : Diálogos en forma de prompt box-->
+                    
+                <script lang="javascript" type="text/javascript">
+                    
+                    var age = prompt("Cuántos anos tienes? ", "23");
+                    
+                    document.write("Nos has dicho que tienes "+ age + " anos.");
+
+                    if (age < 18){
+                        document.write("<p>No se permite la entrada a menores de edad</p>");
+                    }   else{
+                        document.write("<p>Eres mayor de edad, puedes pasar.</p>");
+                    }
+
+                </script>
+            
+    </body>
+</html>
