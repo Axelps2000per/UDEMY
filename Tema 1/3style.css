@@ -1,0 +1,44 @@
+
+h1{
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+h2{
+    color:rgb(200, 150, 216);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;     
+} 
+
+h3 {
+    color: rgb(155, 60, 175);
+    font-family: Georgia, Times, serif;
+    font-size: 1.25em;
+}
+
+p{
+    font-family: Arial, verdana, sans-serif;
+    font-size: 0.8em;
+}
+
+footer{
+    color: blue;
+    font-family: arial,verdana, sans-serif;
+    font-size: .5em;
+}
+
+#myparagraph {
+    color:rgba(20,20,180,0.5) ; 
+}
+
+.mytext {
+    font-size: 0.65em;
+}
+
+.centered {
+    text-align: center;
+}
+
+.justified{
+    text-align: justify;
+}
