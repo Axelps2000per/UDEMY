@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Eventos en JS</title>
+        <meta charset="UTF-8">
+        
+        <script lang="javascript" type="text/javascript">
+            function buttonPressed(buttomID){
+                alert("Bien Hecho, pulsaste el botón "+ buttomID+"!!");
+            }
+            function loadingPage(){
+                alert("Hola, Bienvenido!!")
+            }
+
+            function mouseOver(){
+                alert("Te has puesto encima mio!")
+            }
+
+            function unlodaingPage(){
+                alert("Hasta la vista, baby!");
+            }
+        </script>
+    </head>
+
+    <body onload="loadingPage()"
+    onunload="unloadingPage()">
+        <h1>Eventos en JS</h1>
+
+        <h2>Evento On Click</h2>
+        <input type="javascript" value="Presioname!" onclick="buttonPressed(1)" />
+        <input type="javascript" value="Presioname!" onclick="buttonPressed(2)"/>
+        <input type="javascript" value="Presioname!" onclick="buttonPressed(3)"/>     
+        
+        <input type="button" value="Ponte encima de mi!" onmouseover="mouseOver()"/>
+
+
+    </body>
+</html>
+
+<!--Aquí vemos algunos eventos en JS
+    *ONCLICK
+    *ONLOAD
+    *onMouseOver
+    *UnloadingPage
+
+-->
