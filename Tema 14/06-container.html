@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+        <!--Basicamente acceder a HTML desde JAVA-->
+        <title></title>
+        <meta charset="UTF-8">
+    
+        <script lang="javascript" type="text/javascript">
+        function changeInnerHTML(){
+            document.getElementById("content").innerHTML = "<h2>Nuevo Contenido</h2><p>El contenido ha cambiado, verdad?</p>";
+            }      
+        
+        function changeInnerHTML2(){
+            document.getElementById("content").innerHTML = "<h2>Magnífico ejemplo final de JS, HTML y CSS</h2><p>Este es un nuevo párrafo que hacemos el cual será cambiado a través de Inner HTML cuando accedamos a el.</p>";
+            }         
+            
+        </script>
+    </head>
+    
+    <body>  
+        
+        <div id="content">
+        <h1>Magnífico ejemplo final de JS, HTML y CSS</h1>
+        <p>Este es un nuevo párrafo que hacemos el cual será cambiado a través de Inner HTML cuando accedamos a el.</p>
+        </div>
+
+        <input type="button" value="Púlsame y verás!!" onclick="changeInnerHTML()"/>
+        <br>
+        
+        <input type="button" value="Recuperar el contenido anterior" onclick="changeInnerHTML2()"/>
+
+        <script lang="javascript" type="text/javascript">
+        </script> 
+        
+    
+    </body>  
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Final Test</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            function loopArray(theArray){
+                for(x in theArray)
+                {
+                    document.write("Iter: "+x+" Objeto: "+theArray[x]+"</br>");
+                }
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h1>Lugares Favoritos</h1>
+        <script lang="javascript" type="text/javascript">
+            
+            var places = ["Madrid", "Tenerife", "Grecia" ,"Talin", "Paris"]; 
+            
+            places.push("Lima", "Bogotá", "Barcelona","Estocolmo", "Amsterdan")
+
+            for(x in places)
+            {
+                document.write(places[x]+"</br>");
+            }
+            document.write("=================================</br>")
+
+            places.push("Roma")
+
+            loopArray(places);
+
+            places.splice(0,2);
+            document.write("=================================</br>")
+            loopArray(places);
+
+            document.write("=================================</br>")
+            places.sort();
+            loopArray(places);
+            
+        </script>      
+    </body>  
+</html>

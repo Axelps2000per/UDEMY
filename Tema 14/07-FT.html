@@ -1,0 +1,63 @@
+<html>
+    
+    <head>
+        
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+               
+        <script lang="javascript" type="text/javascript" src="07-FT.js"></script>
+    </head>
+
+    <body>  
+        <h2>Completar el Formulario</h2>
+
+        <table border="3px">      
+            <thead>                                
+                <tr scope="colgroup">       
+                    <th scope="col">Inf. Requerida</th>
+                    <th scope="col">Su información</th>
+                </tr>
+            </thead>                        
+
+            <tbody>
+                <tr scope="rowgroup">                       <!--Nombres -->
+                    <td scope="row">Names</td>
+                    <td scope="row"><input Names type="text" id="names"></td>          
+                </tr>
+            </tbody>                        
+
+
+            <tbody>                         
+                <tr scope="rowgroup">                       <!--Apellidos -->
+                    <td scope="row">Lastnames</td>
+                    <td scope="row"><input type="text"  id="lastNames"></td>            
+                </tr>
+            </tbody>                        
+
+
+            <tbody>
+                <tr scope="rowgroup">                       <!--Mail -->
+                    <td scope="row">Correo electrónico</td>
+                    <td scope="row"> <input type="email" id="email" ></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">                       <!--Teléfono -->
+                    <td scope="row">Nro. de teléfono</td>
+                    <td scope="row"><input type="tel"  id="tel" ></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr scope="rowgroup">
+                    <td scope="row">Enviar</td>
+                    <td scope="row"><input type="submit" value="Enviar información" onclick="submit()"/>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+    
+        
+    </body>  
+</html>

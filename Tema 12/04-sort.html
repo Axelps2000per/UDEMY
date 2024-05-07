@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Ordenación</h1>
+        <script lang="javascript" type="text/javascript">
+            
+            var names = ["Gauss", "Laplace", "Fourier", "Ruffini", "Aristóteles", "Pitágoras", "Godel", "Riemann", "Euclides", "Descartes", "Lebesgue"];
+
+            names.sort();
+            
+            for(x in names)
+            {
+                document.write(names[x]+"</br>");
+            }
+
+            document.write("=========================<br/>");
+            //array.splice(indice del primer elemento a ser eliminado, número de elementosa ser eliminados);
+            names.splice(3,4);
+
+            for(x in names)
+            {
+                document.write(names[x]+"<br/>");
+            }
+
+        </script>      
+    </body>  
+</html>

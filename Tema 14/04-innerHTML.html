@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Window HARDWARE</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            #prueba {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Prueba de HTML interno</h1>
+        
+        <p id="my-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minus dignissimos autem, necessitatibus assumenda provident mollitia eos amet delectus eveniet culpa blanditiis impedit tempora eum doloremque debitis vitae exercitationem temporibus!</p>
+
+        <div id="prueba">HEYYY ASÍ EMPEZAMOS</div>
+
+        <script lang="javascript" type="text/javascript">
+            
+            var myDiv = document.getElementById("prueba");
+
+            myDiv.style.color = "#FFFFFF";
+            myDiv.style.backgroundColor =  "#6622AA";
+
+            alert(myDiv.innerHTML);
+            
+            myDiv.innerHTML = "Este texto lo hemos generado a través de Javascript";
+
+            document.getElementById("my-paragraph").innerHTML = "Hemos reemplazado el antiguo lorem por esto.";
+            
+        </script>
+
+    </body>
+</html>

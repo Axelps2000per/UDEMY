@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Poemas</title>
+        <meta charset="UTF-8">       
+
+    </head>
+
+    <body>
+        <h1>Poema</h1>
+        <script lang="javascript" type="text/javascript">
+           
+            poem = "Cada vez que pienso en ti, mis ojos rompen en llanto; y muy triste me pregunto,¿por qué te quiero tanto?"
+
+            for(var i = 0; i< poem.length ;i++)
+           {
+            document.write(poem[i] +"</br>");
+           }
+
+           document.write("</br>");
+
+           document.write(poem.replace(/[AEIOUaeiou]/g,"*")+"</br>");
+
+           //Convirtiendo a Array y ordenandolo alfabeticamente
+           Food = "Cebiche, Lechetigre, Mazamorra, Huevos, Sal, Pimienta, Salmón, Agua, Sol, Aire, Espinacas";
+           var moreFood = Food.split(", ");
+            for (x in moreFood)
+            {
+                moreFood.sort();
+                document.write(moreFood[x]+ "</br>");
+            }
+
+            
+        </script>      
+    </body>  
+</html>

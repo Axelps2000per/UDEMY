@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Manipulando Arrays</h1>
+        <script lang="javascript" type="text/javascript">
+            var grades = [0.5, 9.3 , 7.0 , 6.3 , 5.5, 9.4 , 8.8 , 7.9, 9.5, 9.5];
+
+            document.write("Longitud del array: "+grades.length+"<br/>");
+            //grades.push(nota1, nota2, nota3, nota4...);
+            //Anadir al final = Apendizar
+            grades.push(10.0, 5.7);
+            document.write("Longitud del array: "+grades.length+"<br/>");
+
+            for(x in grades)
+            {
+                document.write("Iter: "+x+ " Objeto : " + grades[x] + "</br>");
+            }
+            document.write("================================<br/>");
+
+            var poppedGrade = grades.pop();
+
+            document.write("Acabamos de retirar el objeto: " + poppedGrade + "</br>");
+            for(x in grades)
+            {
+                document.write("Iter: "+x+ " Objeto : " + grades[x] + "</br>");
+            }
+
+        </script>      
+    </body>  
+</html>
+

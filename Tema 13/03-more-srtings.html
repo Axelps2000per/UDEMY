@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Trim, Replace, Split</title>
+        <meta charset="UTF-8">       
+
+    </head>
+
+    <body>
+        <h1>Trim, Replace, Split</h1>
+        <script lang="javascript" type="text/javascript">
+           
+            var phrase ="Si tu no luchas por tus suenos, alguien te pagará para que luches por los suyos";
+            document.write(phrase+"</br>");
+
+            var newPhrase = phrase.replace("suenos", "pokemons");
+            
+            document.write(newPhrase+"<br/>");
+
+            document.write(phrase+"<br/>");
+                    //Reemplazando las vocales con "*"
+            document.write(phrase.replace(/[AEIOUaeiou]/g,"*")+"</br>");
+
+                    //Convirtiendo variable(lista) a un array
+            var names = "Axel Pardo, Esequiel, Maria, elvis, David, Antoniii, pirom";
+            var moreNames = names.split(", ");
+            for (x in moreNames)
+            {
+                document.write(moreNames[x]+ "</br>");
+            }
+
+                    //La función Trim se encarga de eliminar los espacios de adelante y los espacios de detrás
+            var correo ="          axelpardosant@gmail.com         ";
+            oncancel.write(""+correo.trim()+"")
+
+        </script>      
+    </body>  
+</html>

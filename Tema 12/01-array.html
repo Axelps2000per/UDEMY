@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Arrays</h1>
+        <script lang="javascript" type="text/javascript">
+
+            // 1 - Método estándar del constructor
+            var people = new Array();
+
+            people[0]= "Axel Pardo";
+            people[1]= "Lamita ewqko";
+            people[2]= "Mica t";
+            people[3]= "Pepe Jose";
+            people[4]= "Futbol asd";
+
+            // 2 - Método condensado
+            var food = new Array ("Sushi", "Lomo a la pimienta", "Cebiche", "Arroz con pollo", "Papa rellena")
+
+            // 3 Método del array literal
+            var companies = ["Apple", "Google", "Udemy" ,"Facebook", "Unity"];
+
+            alert("La segunda persona es "+people[1]+ " y es genial!");
+            alert("La segunda persona es "+food[1]+ " y es rico!");
+            alert("La tercera empresa es "+ companies[1] +" y es muy conocida!");
+
+
+
+            
+            var dim = people.length
+            alert("El array de personas contiene " + dim);     
+
+            for(var i = 0; i < people.length; i++)
+            {
+                document.write(people[i] + "<br/>");
+            }
+
+            people[2] = "Pedro";            //Cambiamos un valor
+            document.write("===============</br>")
+
+            for (var i = 0; i < people.length; i++)
+            {
+                document.write(people[i] + "</br>");
+            }
+
+        </script>
+    </body>
+</html>

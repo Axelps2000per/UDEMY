@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1>Datos del navegador del usuario</h1>
+        <script lang="javascript" type="text/javascript">
+            //Navigator: Nos centraremos en 3 propiedades    
+            
+            //appCodeName   = Para saber el código del navegador
+            document.write("Code Name del navegador: "+ navigator.appCodeName)
+            
+            //appName       = Identifica el nombre del navegador utilizado/Tecnologia que utiliza el navegador
+            document.write("Nombre del navegador: "+ navigator.appName+ "</br>");
+            
+            //appVersion    = Version del navegador
+            document.write("versión del navegador: "+ navigator.appVersion+ "</br>");
+            
+            //CookieEnabled
+            document.write("Cookies activas: "+ navigator.cookieEnabled + "</br>");
+
+            //language
+            document.write("Idioma del Navegador: "+ navigator.language + "</br>");
+
+            //platform , product
+            document.write("Platform: "+ navigator.platform + "Product "+navigator.product);
+        </script>
+
+    </body>
+</html>
